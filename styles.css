@@ -1,0 +1,785 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f1e8;color:#161914;font-family:"DM Sans",sans-serif}a{color:inherit}.site-nav{position:sticky;top:0;z-index:1000;height:70px;display:flex;align-items:center;padding:0 6vw;background:rgba(248,245,238,.96);backdrop-filter:blur(10px);border-bottom:1px solid #d9d2c7}.site-nav .name{font-weight:700;letter-spacing:.09em;text-decoration:none}.site-nav nav{margin-left:auto;display:flex;gap:28px}.site-nav nav a{font-size:12px;text-decoration:none}.site-nav button{margin-left:28px;border:0;background:none;cursor:pointer;font-size:11px;letter-spacing:.12em}.menu{position:fixed;inset:0;z-index:2000;background:#151c18;color:#f4eee2;display:grid;place-items:center;opacity:0;visibility:hidden;transition:.35s}.menu.open{opacity:1;visibility:visible}.menu>button{position:absolute;right:6vw;top:30px;border:0;background:none;color:#fff;cursor:pointer}.menu nav{width:min(760px,80vw);display:flex;flex-direction:column}.menu nav a{font:500 clamp(30px,5vw,60px)/1.2 "Playfair Display";text-decoration:none;border-bottom:1px solid #39433e;padding:7px}.menu nav span{font:700 10px "DM Sans";color:#bd9255;margin-right:24px}.section{padding:88px 6vw;scroll-margin-top:70px}.hero{min-height:calc(100vh - 70px);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:6vw;padding:70px 6vw}.eyebrow{font-size:10px;letter-spacing:.17em;font-weight:700;color:#a27740}.hero h1,.section-head h2,.thinking h2,.connect h2,footer h2{font:500 clamp(44px,5.5vw,78px)/1 "Playfair Display";letter-spacing:-.03em}.hero h1{margin:12px 0 32px}.hero h1 em{color:#15483d;font-style:normal}.hero-sub{max-width:620px;line-height:1.7;color:#565a53}.hero-image{margin:0;position:relative}.hero-image img{width:100%;display:block;max-height:72vh;object-fit:cover;object-position:50% 35%}.hero-image figcaption{position:absolute;left:-18px;bottom:18px;background:#153f35;color:white;padding:10px 15px;font-size:9px;letter-spacing:.15em}.areas{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #c9c0b4;margin-bottom:20px}.areas>div{border-bottom:1px solid #d7d0c5}.areas>div:nth-child(odd){padding-right:24px}.areas>div:nth-child(even){padding-left:24px;border-left:1px solid #d7d0c5}.areas button{width:100%;text-align:left;padding:15px 0;border:0;background:none;cursor:pointer}.areas b{float:right;color:#ad7b3d}.areas p{display:none;margin:0 0 13px;color:#6a6d66;font-size:12px}.areas>div.open p{display:block}.text-link{display:inline-block;text-decoration:none;border-bottom:1px solid #173f35;padding-bottom:5px;margin-top:12px}.section-head{display:grid;grid-template-columns:70px 1fr;gap:26px;border-top:1px solid #c7beb1;padding-top:22px;margin-bottom:55px}.section-head>span{font:500 22px "Playfair Display";color:#ac7e40}.section-head h2{font-size:clamp(36px,4.4vw,62px);margin:5px 0 12px}.section-head p:last-child{max-width:720px;color:#62665f}.impact-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c9c1b5;border-bottom:1px solid #c9c1b5}.impact-row article{padding:30px 25px;border-right:1px solid #d8d0c4;min-height:300px}.impact-row article:last-child{border-right:0}.impact-row small{color:#a27740}.impact-row strong{display:block;font:500 clamp(45px,5vw,72px) "Playfair Display";color:#15483d;margin:20px 0 10px}.impact-row h3{font:500 23px/1.1 "Playfair Display";margin:0 0 16px}.impact-row p{font-size:12px;line-height:1.6;color:#666962}.impact-row b{font-size:10px;letter-spacing:.08em}.work{background:#f0ebe2}.project{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;padding:45px 0;border-top:1px solid #c8c0b4;align-items:center}.project.reverse{grid-template-columns:1.2fr .8fr}.project.reverse .project-copy{order:2}.project.reverse img{order:1}.project img{width:100%;height:auto;max-height:360px;object-fit:contain;background:#ddd5c8}.project-copy small{font-size:9px;letter-spacing:.15em;color:#9b713e}.project-no{display:block;font:500 18px "Playfair Display";color:#ad7f43;margin:18px 0}.project h3{font:500 clamp(30px,3.6vw,48px)/1.05 "Playfair Display";margin:0 0 18px}.project p{line-height:1.65;color:#585c55}.note{font-size:11px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tags span{font-size:10px;padding:7px 9px;border:1px solid #b9b2a7}.quick,.role-copy button,.connect-actions button{border:0;background:none;border-bottom:1px solid #18463b;padding:0 0 5px;color:#173f35;cursor:pointer;font-weight:700}.thinking{background:#121815;color:#efe8db;padding:90px 6vw}.think-inner{max-width:1300px;margin:auto}.eyebrow.light{color:#c59a59}.thinking h2{font-size:clamp(45px,5vw,70px);margin:8px 0}.think-intro{max-width:650px;color:#c2c6c0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:55px;border-top:1px solid #44504a}.steps>div{padding:30px 28px 30px 0;border-bottom:1px solid #44504a}.steps span{color:#c59a59;font-size:10px}.steps h3{font:500 24px "Playfair Display"}.steps p{font-size:12px;line-height:1.65;color:#b9bdb8;max-width:330px}.role{display:grid;grid-template-columns:.42fr 1fr .72fr;gap:45px;align-items:center;padding:42px 0;border-top:1px solid #cbc3b7}.role:last-child{border-bottom:1px solid #cbc3b7}.role-meta>*{display:block}.role-meta b{font:500 20px "Playfair Display";color:#a87b40;margin-bottom:18px}.role-meta small,.role-meta span{font-size:10px;margin-bottom:8px}.role-meta em{font-style:normal;font-size:9px;letter-spacing:.11em;color:#9b713e;font-weight:700}.role-copy h3{font:500 34px/1.05 "Playfair Display";margin:0 0 6px}.role-copy h4{margin:0 0 15px;color:#17483d}.role-copy p{line-height:1.65;color:#5c6058}.role>img,.role-photo{width:100%;margin:0;background:#e4ded3}.role>img{max-height:260px}.role-photo img{width:100%;height:250px;display:block;object-fit:cover}.role-photo.contain img{object-fit:contain;background:#eee8de;padding:16px}.role-photo figcaption{font-size:9px;letter-spacing:.11em;padding:7px 10px;background:#173f35;color:white}.cap-wrap{display:grid;grid-template-columns:270px 1fr;border-top:1px solid #c9c1b5}.cap-nav{border-right:1px solid #d4ccc0}.cap-nav button{display:flex;gap:14px;width:100%;padding:17px 14px;border:0;border-bottom:1px solid #d4ccc0;background:none;text-align:left;cursor:pointer}.cap-nav button.active{background:#173f35;color:#fff}.cap-nav span{font-size:9px;color:#ad824c}.cap-main{display:grid;grid-template-columns:1.2fr .8fr;min-height:480px}.cap-copy{padding:40px}.cap-copy>small{font-size:9px;letter-spacing:.15em;color:#a77c43}.cap-copy>h3{font:500 43px "Playfair Display";margin:12px 0}.cap-line{font:500 22px "Playfair Display";color:#173f35}.cap-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}.cap-cols h4{font-size:11px;letter-spacing:.08em}.cap-cols ul{list-style:none;padding:0;margin:0}.cap-cols li{font-size:11px;padding:4px 0;color:#5e625b}.cap-visual{background:#173f35;display:grid;place-items:center;padding:30px}.cap-diagram{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:9px}.cap-diagram span{background:#f4efe5;padding:12px 14px;font-size:10px}.cap-diagram b{color:#c59957}.beyond{background:#eee8dd}.beyond-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:220px;gap:12px}.beyond-grid>*{position:relative;padding:25px;border:0;overflow:hidden;text-align:left}.beyond-grid small{font-size:9px;letter-spacing:.14em}.beyond-grid h3{font:500 29px/1.08 "Playfair Display";position:relative;z-index:2}.community{grid-row:span 2;background:#173f35;color:#fff;cursor:pointer}.community h3{font-size:48px}.community span{position:absolute;bottom:25px}.travel{background:linear-gradient(145deg,#657a6b,#263b34);color:#fff}.scene-mountains{position:absolute;inset:40% -8% -25%;background:linear-gradient(145deg,transparent 0 35%,#aaa17d 36% 58%,transparent 59%),linear-gradient(35deg,transparent 0 35%,#405d4f 36% 65%,transparent 66%)}.drawing{background:#ddd2bd}.line-drawing{position:absolute;right:20%;bottom:0;font:500 110px "Playfair Display";color:#776852}.singing{background:#151a17;color:#fff}.wave{position:absolute;bottom:32px;font-size:50px;color:#c39757}.sports{background:linear-gradient(135deg,#a67745,#36443a);color:#fff}.motion{position:absolute;right:25px;bottom:10px;font-size:100px;opacity:.45}.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.edu article{background:#ebe5da}.edu img{width:100%;height:250px;object-fit:cover;display:block}.edu article div{padding:24px}.edu small{font-size:9px;letter-spacing:.13em;color:#9d743f}.edu h3{font:500 27px "Playfair Display";margin:9px 0}.connect{padding:85px 6vw;background:#151b18;color:#f0e9dc;display:grid;grid-template-columns:1.2fr .8fr;gap:80px}.connect h2{font-size:60px;margin:7px 0}.connect p{max-width:650px;line-height:1.6;color:#c1c5bf}.connect-actions{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:20px}.connect-actions button{color:#f0e9dc;border-color:#bd9255}.link-note{font-size:10px;color:#9fa59f}footer{padding:45px 6vw;background:#173f35;color:#f1eadd;position:relative}footer p{font-size:9px;letter-spacing:.12em;color:#c59a59}footer h2{font-size:37px;margin:8px 0}footer a{position:absolute;right:6vw;bottom:45px}.drawer-bg{position:fixed;inset:0;background:#0008;z-index:3000;opacity:0;visibility:hidden;transition:.25s}.drawer-bg.open{opacity:1;visibility:visible}.drawer{position:fixed;right:0;top:0;height:100%;width:min(520px,92vw);background:#f6f1e8;z-index:3001;transform:translateX(100%);transition:.35s;padding:35px;overflow:auto}.drawer.open{transform:translateX(0)}.drawer>button{float:right;border:0;background:none;cursor:pointer}.drawer h2{clear:both;padding-top:35px;font:500 42px/1.08 "Playfair Display"}.drawer p,.drawer li{line-height:1.7}.drawer .tag{font-size:9px;letter-spacing:.15em;color:#a27842}.drawer ul{padding-left:18px}@media(max-width:900px){.site-nav nav{display:none}.hero{grid-template-columns:1fr}.hero-image{order:-1;max-width:560px}.areas{grid-template-columns:1fr}.areas>div:nth-child(even){padding-left:0;border-left:0}.impact-row{grid-template-columns:1fr 1fr}.project,.project.reverse{grid-template-columns:1fr}.project.reverse .project-copy,.project.reverse img{order:initial}.role{grid-template-columns:1fr}.cap-wrap{grid-template-columns:1fr}.cap-nav{border-right:0;display:grid;grid-template-columns:1fr 1fr}.cap-main{grid-template-columns:1fr}.beyond-grid{grid-template-columns:1fr 1fr}.community{grid-column:1/-1;grid-row:auto}.edu{grid-template-columns:1fr}.connect{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}@media(max-width:560px){.section,.hero,.thinking,.connect{padding-left:20px;padding-right:20px}.hero h1{font-size:43px}.impact-row{grid-template-columns:1fr}.impact-row article{min-height:auto;border-right:0;border-bottom:1px solid #d8d0c4}.section-head{grid-template-columns:45px 1fr}.project{gap:24px}.project img{max-height:280px}.steps{grid-template-columns:1fr}.cap-nav{grid-template-columns:1fr}.cap-copy{padding:30px 0}.cap-cols{grid-template-columns:1fr 1fr}.beyond-grid{grid-template-columns:1fr}.edu img{height:210px}footer a{position:static;display:block;margin-top:25px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.menu,.drawer{transition:none}}/* Skills & tools: intentionally separate from capabilities */
+.skills{background:#f8f5ee}.skill-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #c9c1b5;border-left:1px solid #c9c1b5}.skill-groups article{padding:32px 34px 36px;border-right:1px solid #c9c1b5;border-bottom:1px solid #c9c1b5;min-height:260px}.skill-index{font:500 14px "Playfair Display";color:#ad7f43}.skill-groups h3{font:500 30px/1.08 "Playfair Display";margin:13px 0 10px}.skill-groups p{max-width:560px;color:#62665f;line-height:1.6;font-size:13px}.skill-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.skill-chips span{padding:8px 10px;border:1px solid #c8c0b4;background:#fbf8f1;font:500 10px/1 "DM Sans";letter-spacing:.02em}.role-copy button{margin-top:5px}.project img{min-height:240px}.drawer h3{font:500 22px "Playfair Display";margin:26px 0 8px}.drawer .detail-block{padding:18px 0;border-top:1px solid #d6cec2}.drawer .detail-label{font-size:9px;letter-spacing:.14em;color:#a27842;font-weight:700}.drawer .tool-list{display:flex;flex-wrap:wrap;gap:7px;padding:0;list-style:none}.drawer .tool-list li{border:1px solid #c8c0b4;padding:6px 8px;font-size:10px;line-height:1.2}
+@media(max-width:900px){.skill-groups{grid-template-columns:1fr}.project img{min-height:180px}}
+
+/* Beyond the Work — user-provided imagery + explanatory copy */
+.beyond-grid{
+  display:grid;
+  grid-template-columns:1.25fr 1fr 1fr;
+  grid-template-rows:260px 260px;
+  gap:14px;
+}
+.beyond-grid .hobby-card{
+  position:relative;
+  padding:0;
+  min-height:0;
+  overflow:hidden;
+  border:0;
+  background:#171b18;
+  color:#fff;
+  text-align:left;
+  isolation:isolate;
+}
+.beyond-grid .hobby-card>img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .55s cubic-bezier(.22,1,.36,1);
+}
+.beyond-grid .hobby-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(9,13,11,.08) 18%,rgba(9,13,11,.86) 100%);
+  z-index:1;
+}
+.beyond-grid .hobby-card:hover>img{transform:scale(1.025)}
+.beyond-grid .hobby-overlay{
+  position:absolute;
+  z-index:2;
+  left:0;right:0;bottom:0;
+  padding:24px 25px;
+}
+.beyond-grid .hobby-overlay small{
+  display:block;
+  color:#f0d7ad;
+  margin-bottom:9px;
+}
+.beyond-grid .hobby-overlay h3{
+  margin:0 0 9px;
+  color:#fff;
+  font:500 29px/1.05 "Playfair Display";
+}
+.beyond-grid .hobby-overlay p{
+  margin:0;
+  max-width:95%;
+  color:rgba(255,255,255,.9);
+  font-size:12px;
+  line-height:1.55;
+}
+.beyond-grid .community{grid-row:1 / span 2}
+.beyond-grid .community .hobby-overlay{padding:31px}
+.beyond-grid .community .hobby-overlay h3{font-size:43px}
+.beyond-grid .community .hobby-overlay p{max-width:410px;font-size:13px}
+.beyond-grid .community .hobby-overlay span{
+  display:inline-block;
+  position:static;
+  margin-top:20px;
+  padding-bottom:4px;
+  border-bottom:1px solid #f0d7ad;
+  font-size:11px;
+  font-weight:700;
+}
+.beyond-grid .travel .hobby-overlay h3,
+.beyond-grid .drawing .hobby-overlay h3,
+.beyond-grid .singing .hobby-overlay h3,
+.beyond-grid .sports .hobby-overlay h3{font-size:27px}
+
+@media(max-width:900px){
+  .beyond-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .beyond-grid .community{grid-column:1/-1;grid-row:auto;min-height:360px}
+  .beyond-grid .travel,.beyond-grid .drawing,.beyond-grid .singing,.beyond-grid .sports{min-height:260px}
+}
+@media(max-width:560px){
+  .beyond-grid{grid-template-columns:1fr}
+  .beyond-grid .community{grid-column:auto;min-height:390px}
+  .beyond-grid .travel,.beyond-grid .drawing,.beyond-grid .singing,.beyond-grid .sports{min-height:300px}
+  .beyond-grid .hobby-overlay{padding:22px}
+  .beyond-grid .community .hobby-overlay{padding:24px}
+  .beyond-grid .community .hobby-overlay h3{font-size:36px}
+}
+
+/* Community card top copy — placed in the image's white space */
+.beyond-grid .community .community-top-copy{
+  position:absolute;
+  z-index:3;
+  top:30px;
+  left:30px;
+  right:30px;
+  max-width:82%;
+  color:#183f35;
+  text-align:left;
+}
+.beyond-grid .community .community-top-copy small{
+  display:block;
+  margin-bottom:10px;
+  color:#8a6538;
+  font-size:9px;
+  letter-spacing:.15em;
+  font-weight:700;
+}
+.beyond-grid .community .community-top-copy h3{
+  margin:0 0 10px;
+  max-width:560px;
+  color:#183f35;
+  font:500 32px/1.05 "Playfair Display";
+}
+.beyond-grid .community .community-top-copy p{
+  margin:0;
+  max-width:560px;
+  color:#39423d;
+  font-size:12px;
+  line-height:1.55;
+}
+@media(max-width:900px){
+  .beyond-grid .community .community-top-copy{top:24px;left:24px;right:24px;max-width:88%}
+  .beyond-grid .community .community-top-copy h3{font-size:28px}
+}
+@media(max-width:560px){
+  .beyond-grid .community .community-top-copy{top:20px;left:20px;right:20px;max-width:90%}
+  .beyond-grid .community .community-top-copy h3{font-size:25px}
+  .beyond-grid .community .community-top-copy p{font-size:11px}
+}
+
+/* Subtle "lift" interaction for clickable topics/tabs/cards */
+:root{
+  --lift-y:-4px;
+  --lift-shadow:0 12px 28px rgba(28,31,27,.10);
+  --lift-border:#b49363;
+}
+
+/* Hero domain topics */
+.areas>div{
+  transition:transform .22s ease, box-shadow .22s ease, background-color .22s ease;
+  position:relative;
+}
+.areas>div:hover,
+.areas>div:focus-within{
+  transform:translateY(var(--lift-y));
+  background:#faf7f0;
+  box-shadow:var(--lift-shadow);
+  z-index:2;
+}
+
+/* Capability tabs */
+.cap-nav button{
+  transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+  position:relative;
+}
+.cap-nav button:hover,
+.cap-nav button:focus-visible{
+  transform:translateY(-3px);
+  box-shadow:0 9px 20px rgba(28,31,27,.09);
+  z-index:2;
+}
+.cap-nav button.active{
+  box-shadow:0 9px 20px rgba(23,63,53,.14);
+}
+
+/* Project actions and role-story actions */
+.quick,
+.role-copy button,
+.connect-actions button{
+  transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease, padding .18s ease;
+}
+.quick:hover,
+.quick:focus-visible,
+.role-copy button:hover,
+.role-copy button:focus-visible,
+.connect-actions button:hover,
+.connect-actions button:focus-visible{
+  transform:translateY(-3px);
+  box-shadow:0 8px 18px rgba(28,31,27,.10);
+  background:#fbf8f2;
+  padding:7px 10px;
+}
+
+/* Project rows feel slightly elevated when explored */
+.project{
+  transition:transform .24s ease, box-shadow .24s ease, background-color .24s ease;
+}
+.project:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 34px rgba(28,31,27,.08);
+  background:rgba(255,255,255,.26);
+}
+
+/* Professional journey rows */
+.role{
+  transition:transform .24s ease, box-shadow .24s ease, background-color .24s ease;
+}
+.role:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 34px rgba(28,31,27,.08);
+  background:rgba(255,255,255,.30);
+}
+
+/* Beyond cards, including Stories that Matter */
+.beyond-grid .hobby-card{
+  transition:transform .24s ease, box-shadow .24s ease;
+}
+.beyond-grid .hobby-card:hover,
+.beyond-grid .hobby-card:focus-visible{
+  transform:translateY(-5px);
+  box-shadow:0 16px 34px rgba(22,26,23,.18);
+  z-index:4;
+}
+
+/* Education cards */
+.edu article{
+  transition:transform .24s ease, box-shadow .24s ease;
+}
+.edu article:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px rgba(28,31,27,.10);
+}
+
+/* Full-screen menu topics */
+.menu nav a{
+  transition:transform .18s ease, padding-left .18s ease, background-color .18s ease;
+}
+.menu nav a:hover,
+.menu nav a:focus-visible{
+  transform:translateX(7px);
+  padding-left:16px;
+  background:rgba(255,255,255,.035);
+}
+
+}
+
+/* Respect reduced motion */
+@media(prefers-reduced-motion:reduce){
+  .areas>div,
+  .cap-nav button,
+  .quick,
+  .role-copy button,
+  .connect-actions button,
+  .project,
+  .role,
+  .beyond-grid .hobby-card,
+  .edu article,
+  .menu nav a{
+    transition:none !important;
+  }
+}
+
+/* V6 — explicit click/tap lift, including touch-capable Windows laptops */
+.click-pop{
+  animation:atlasClickPop .34s cubic-bezier(.22,1,.36,1);
+  position:relative;
+  z-index:8 !important;
+}
+@keyframes atlasClickPop{
+  0%{
+    transform:translateY(0) scale(1);
+    box-shadow:0 0 0 rgba(28,31,27,0);
+  }
+  45%{
+    transform:translateY(-7px) scale(1.012);
+    box-shadow:0 16px 32px rgba(28,31,27,.16);
+  }
+  100%{
+    transform:translateY(-3px) scale(1.004);
+    box-shadow:0 9px 20px rgba(28,31,27,.10);
+  }
+}
+
+/* Selected/open topic should stay slightly lifted after click */
+.areas>div.open{
+  transform:translateY(-3px);
+  background:#faf7f0;
+  box-shadow:0 9px 20px rgba(28,31,27,.09);
+  z-index:3;
+}
+.cap-nav button.active{
+  transform:translateY(-3px);
+  box-shadow:0 11px 24px rgba(23,63,53,.17);
+  z-index:3;
+}
+
+/* Make clickable Beyond story obviously responsive */
+.beyond-grid button.hobby-card:active{
+  transform:translateY(-6px) scale(1.008);
+}
+
+/* Clickable controls need a pointer cursor */
+.project .quick,
+.role-copy button,
+.cap-nav button,
+.areas button,
+.beyond-grid button,
+.menu nav a,
+.connect-actions button{
+  cursor:pointer;
+}
+
+/* V7 — Community card: all copy in white space, absolutely no text over people */
+.beyond-grid .community-clean{
+  display:grid;
+  grid-template-rows:46% 54%;
+  background:#f6f3ed;
+  color:#183f35;
+  min-height:520px;
+  padding:0;
+  overflow:hidden;
+}
+.beyond-grid .community-clean::after{display:none !important}
+.beyond-grid .community-clean .community-top-copy{
+  position:relative !important;
+  inset:auto !important;
+  max-width:none !important;
+  z-index:3;
+  padding:28px 30px 24px;
+  background:#f6f3ed;
+  color:#183f35;
+  text-align:left;
+}
+.beyond-grid .community-clean .community-top-copy small{
+  display:block;
+  color:#9a7040;
+  margin-bottom:10px;
+  font-size:9px;
+  letter-spacing:.16em;
+  font-weight:700;
+}
+.beyond-grid .community-clean .community-top-copy h3{
+  margin:0 0 10px;
+  max-width:620px;
+  color:#183f35;
+  font:500 31px/1.04 "Playfair Display";
+}
+.beyond-grid .community-clean .community-top-copy p{
+  margin:0;
+  max-width:650px;
+  color:#3f4943;
+  font-size:12px;
+  line-height:1.6;
+}
+.beyond-grid .community-clean .community-link{
+  display:inline-block;
+  margin-top:15px;
+  color:#183f35;
+  font-size:11px;
+  font-weight:700;
+  border-bottom:1px solid #a8783e;
+  padding-bottom:3px;
+}
+.beyond-grid .community-clean>img{
+  position:relative !important;
+  inset:auto !important;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 72%;
+  display:block;
+  transform:none !important;
+}
+/* Ensure no legacy bottom overlay remains over the people */
+.beyond-grid .community-clean .hobby-overlay{display:none !important}
+
+/* V7 — much stronger, reliable click/tap "pop" feedback */
+.interaction-pop{
+  transform:translateY(-9px) scale(1.018) !important;
+  box-shadow:0 20px 42px rgba(23,30,26,.20) !important;
+  outline:1px solid rgba(167,122,64,.38);
+  outline-offset:2px;
+  z-index:20 !important;
+  transition:transform .18s cubic-bezier(.22,1,.36,1),
+             box-shadow .18s cubic-bezier(.22,1,.36,1),
+             outline-color .18s ease !important;
+}
+
+/* Persistent selected/open states should also feel raised */
+.areas>div.open{
+  transform:translateY(-6px) scale(1.008) !important;
+  box-shadow:0 15px 32px rgba(23,30,26,.14) !important;
+  outline:1px solid rgba(167,122,64,.30);
+  z-index:10;
+}
+.cap-nav button.active{
+  transform:translateY(-5px) scale(1.012) !important;
+  box-shadow:0 14px 30px rgba(23,63,53,.20) !important;
+  z-index:10;
+}
+
+/* Strong hover for mouse users too */
+@media (hover:hover){
+  .project:hover,
+  .role:hover,
+  .edu article:hover,
+  .beyond-grid .hobby-card:hover{
+    transform:translateY(-6px) scale(1.008) !important;
+    box-shadow:0 16px 34px rgba(23,30,26,.13) !important;
+  }
+  .cap-nav button:hover,
+  .areas>div:hover{
+    transform:translateY(-5px) scale(1.008) !important;
+    box-shadow:0 13px 28px rgba(23,30,26,.12) !important;
+  }
+}
+
+@media(max-width:900px){
+  .beyond-grid .community-clean{
+    grid-template-rows:auto 280px;
+    min-height:0;
+  }
+}
+@media(max-width:560px){
+  .beyond-grid .community-clean{
+    grid-template-rows:auto 260px;
+  }
+  .beyond-grid .community-clean .community-top-copy{padding:24px 22px 20px}
+  .beyond-grid .community-clean .community-top-copy h3{font-size:28px}
+}
+
+/* V8 — restore compact project gallery: index left, one preview right */
+.work .project{display:none !important}
+
+.project-gallery{
+  display:grid;
+  grid-template-columns:.72fr 1.28fr;
+  gap:0;
+  border-top:1px solid #c8c0b4;
+  border-bottom:1px solid #c8c0b4;
+  align-items:start;
+}
+
+.project-index{
+  border-right:1px solid #d2cabf;
+}
+
+.project-tab{
+  width:100%;
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:10px;
+  align-items:start;
+  text-align:left;
+  padding:20px 18px 20px 0;
+  border:0;
+  border-bottom:1px solid #d8d0c4;
+  background:transparent;
+  color:#171914;
+  cursor:pointer;
+  transition:background-color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+.project-tab:last-child{border-bottom:0}
+.project-tab>span{
+  color:#a77b42;
+  font-size:9px;
+  padding-top:4px;
+}
+.project-tab b{
+  display:block;
+  font:500 22px/1.08 "Playfair Display";
+  margin-bottom:5px;
+}
+.project-tab small{
+  display:block;
+  color:#74776f;
+  font-size:9px;
+}
+.project-tab.active{
+  background:#e5dfd4;
+  box-shadow:inset 4px 0 #17483d;
+}
+.project-tab:hover,
+.project-tab:focus-visible{
+  background:#ece6dc;
+  transform:translateX(3px);
+}
+
+.project-feature{
+  padding:28px 0 28px 38px;
+}
+.project-feature>img{
+  width:100%;
+  height:300px;
+  object-fit:contain;
+  display:block;
+  background:#e2dbcf;
+}
+.project-feature-copy{
+  padding-top:22px;
+  max-width:760px;
+}
+.project-feature-copy>small{
+  font-size:9px;
+  letter-spacing:.14em;
+  color:#9c7342;
+}
+.project-feature-copy h3{
+  font:500 34px/1.05 "Playfair Display";
+  margin:8px 0 12px;
+}
+.project-feature-copy p{
+  margin:0;
+  color:#5c6059;
+  line-height:1.6;
+}
+.project-feature-copy .tags{
+  margin:16px 0;
+}
+.project-feature-copy .quick{
+  display:inline-block;
+}
+
+/* Keep this section compact — no artificial vertical stretch */
+.work{
+  padding-bottom:72px;
+}
+
+@media(max-width:900px){
+  .project-gallery{grid-template-columns:1fr}
+  .project-index{border-right:0;border-bottom:1px solid #d2cabf}
+  .project-feature{padding:28px 0}
+  .project-feature>img{height:280px}
+}
+@media(max-width:560px){
+  .project-tab{padding:17px 8px 17px 0}
+  .project-tab b{font-size:20px}
+  .project-feature>img{height:230px}
+  .project-feature-copy h3{font-size:30px}
+}
+
+/* Community stories shown after clicking the Community card */
+.community-story-head{margin-bottom:26px}
+.community-story-head h2{font:500 42px/1.03 "Playfair Display";margin:7px 0 12px}
+.community-story-head>p:last-child{color:#666a63;line-height:1.6;max-width:720px}
+.community-story-list{border-top:1px solid #d5cec2}
+.community-story-list article{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:12px;
+  padding:20px 0;
+  border-bottom:1px solid #d5cec2;
+}
+.community-story-list article>span{
+  color:#a8793e;
+  font-size:9px;
+  padding-top:4px;
+}
+.community-story-list small{
+  display:block;
+  color:#9a7040;
+  font-size:8px;
+  letter-spacing:.13em;
+  margin-bottom:7px;
+}
+.community-story-list h3{
+  margin:0 0 7px;
+  font:500 25px/1.05 "Playfair Display";
+}
+.community-story-list p{
+  margin:0;
+  color:#676b64;
+  font-size:12px;
+  line-height:1.55;
+}
+
+/* Capability section — clean editorial structure from approved reference */
+.capability-layout{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  border-top:1px solid #d1c9bd;
+  border-bottom:1px solid #d1c9bd;
+  align-items:stretch;
+}
+.capability-layout .cap-nav{
+  border-right:1px solid #d6cec2;
+  display:flex;
+  flex-direction:column;
+  background:#f6f2ea;
+}
+.capability-layout .cap-nav button{
+  width:100%;
+  min-height:74px;
+  display:grid;
+  grid-template-columns:42px 1fr;
+  align-items:center;
+  text-align:left;
+  border:0;
+  border-bottom:1px solid #d6cec2;
+  background:transparent;
+  color:#3f423d;
+  padding:0 18px;
+  cursor:pointer;
+  transition:background-color .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease;
+}
+.capability-layout .cap-nav button:last-child{border-bottom:0}
+.capability-layout .cap-nav button span{
+  font-size:9px;
+  color:#a87940;
+}
+.capability-layout .cap-nav button.active{
+  background:#17483d;
+  color:#fff;
+  transform:none !important;
+  box-shadow:none !important;
+}
+.capability-layout .cap-nav button.active span{color:#d5b17a}
+.capability-layout .cap-nav button:hover:not(.active){
+  background:#ece6dc;
+  transform:translateX(3px);
+}
+
+.capability-content{
+  padding:42px 56px 48px;
+  min-width:0;
+}
+.cap-kicker{
+  display:block;
+  color:#17483d;
+  font-size:9px;
+  letter-spacing:.17em;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.cap-title{
+  font:500 clamp(46px,5vw,76px)/1 "Playfair Display";
+  letter-spacing:-.035em;
+  margin:0 0 30px;
+  color:#171914;
+}
+
+/* Full-width numbered flow — replaces green box */
+.cap-flow-line{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  position:relative;
+  padding:20px 0 26px;
+  margin-bottom:34px;
+  border-top:1px solid #ddd5c9;
+  border-bottom:1px solid #ddd5c9;
+}
+.cap-flow-line::before{
+  content:"";
+  position:absolute;
+  left:7%;
+  right:7%;
+  top:37px;
+  height:1px;
+  background:#cfc7bb;
+}
+.cap-step{
+  position:relative;
+  text-align:center;
+  z-index:1;
+}
+.cap-step .step-num{
+  width:20px;
+  height:20px;
+  display:grid;
+  place-items:center;
+  margin:0 auto 18px;
+  border-radius:50%;
+  background:#17483d;
+  color:white;
+  font-size:7px;
+  font-weight:700;
+}
+.cap-step .step-label{
+  display:block;
+  font-size:10px;
+  font-weight:700;
+  color:#20231f;
+  text-transform:uppercase;
+}
+.cap-step:not(:last-child)::after{
+  content:"→";
+  position:absolute;
+  top:28px;
+  right:-5px;
+  color:#b98a4e;
+  font-size:12px;
+}
+
+.cap-intro-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:start;
+  margin-bottom:38px;
+}
+.cap-positioning{
+  margin:0;
+  font:500 clamp(28px,3.2vw,43px)/1.15 "Playfair Display";
+  color:#17483d;
+  max-width:760px;
+}
+.cap-proof{
+  padding:4px 0 4px 24px;
+  border-left:1px solid #c69b62;
+  color:#686b65;
+  line-height:1.6;
+  font-size:12px;
+  max-width:500px;
+}
+
+.cap-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:34px 58px;
+}
+.cap-detail-block h4{
+  margin:0 0 13px;
+  font-size:10px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#242721;
+}
+.cap-detail-block ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.cap-detail-block li{
+  padding:4px 0;
+  font-size:12px;
+  color:#656961;
+  line-height:1.45;
+}
+.cap-detail-block#capRelated li,
+#capRelated li{
+  color:#17483d;
+}
+.tool-chips{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.tool-chips span{
+  display:inline-block;
+  border:1px solid #d4ccc0;
+  background:#faf7f1;
+  padding:9px 11px;
+  color:#666a63;
+  font-size:10px;
+  letter-spacing:.03em;
+}
+
+/* Neutralize legacy cap panel styles if they remain elsewhere */
+.cap-wrap,.cap-main,.cap-visual,.cap-diagram{all:unset}
+
+@media(max-width:980px){
+  .capability-layout{grid-template-columns:250px 1fr}
+  .capability-content{padding:36px 32px 42px}
+  .cap-intro-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .capability-layout{grid-template-columns:1fr}
+  .capability-layout .cap-nav{
+    border-right:0;
+    border-bottom:1px solid #d6cec2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .capability-layout .cap-nav button{
+    min-height:58px;
+    border-right:1px solid #d6cec2;
+  }
+  .capability-layout .cap-nav button:nth-child(even){border-right:0}
+  .capability-content{padding:32px 0 40px}
+  .cap-flow-line{overflow-x:auto;grid-template-columns:repeat(5,minmax(120px,1fr))}
+  .cap-detail-grid{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media(max-width:520px){
+  .capability-layout .cap-nav{grid-template-columns:1fr}
+  .capability-layout .cap-nav button{border-right:0}
+  .cap-title{font-size:45px}
+  .cap-positioning{font-size:30px}
+  .cap-detail-grid{grid-template-columns:1fr}
+}
