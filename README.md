@@ -19,3 +19,4 @@ Then visit http://localhost:8000
 
 - Beyond section now uses the user-provided community, travel, drawing, singing, and sports images with explanatory copy.
 - NMIMS MBA dates corrected to 2022–2024.
+Trigger Vercel deployment
